@@ -1,0 +1,48 @@
+One Way Data Binding
+<div class="row">
+    <div class="col-6">
+        1. Interpolation
+        <p>firstName => {{firstName}}</p>
+        <div>
+            rollNo => {{rollNo}}
+        </div>
+        <span>isActive => {{isActive}}</span>
+    </div>
+    <div class="col-6">
+        2. Property Binding
+        <br>
+        <input type="text" [value]="firstName" name="" id="" aria-label="firstName1">
+        <br>
+        <input type="text" [placeholder]="myPlaceHolder" name="" id="" aria-label="placeholder">
+        <br>
+        <div [class]="div1ClassName" [style]="div1Style"></div>
+    </div>
+</div>
+<div class="row">
+    3. Event Binding
+    <div class="col-3">
+        <button class="btn btn-success" (click)="showWelcomeMessage()">Show Welcome Text</button>
+    </div>
+    <div class="col-3">
+        <select name="" id="" title="City1" (change)="onCityChange()">
+            <option value="Bhubaneswar">Bhubaneswar</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Kolkata">Kolkata</option>
+        </select>
+    </div>
+</div>
+Two Way Data Binding
+<div class="row">
+    <div class="col-3">
+        <input type="text" name="" id="" [(ngModel)]="firstName" aria-label="firstName2">
+    </div>
+    <div class="col-3">
+        <select name="" id="" title="City2" [(ngModel)]="selectedCity">
+            <option value="Bhubaneswar">Bhubaneswar</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Kolkata">Kolkata</option>
+        </select>
+        <br>
+        Selected City => {{selectedCity}}
+    </div>
+</div>

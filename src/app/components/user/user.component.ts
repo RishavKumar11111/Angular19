@@ -4,11 +4,11 @@ import { Component } from '@angular/core';
   selector: 'app-user',
   imports: [],
   template: `
-    <h2 class="text-danger">User Page</h2>
+    <h2 class="text-greet">User Page</h2>
     <p>Hi! This is User Component</p>
   `,
   styles: [
-    `.text-danger {
+    `.text-greet {
       color: blue
     }`
   ]

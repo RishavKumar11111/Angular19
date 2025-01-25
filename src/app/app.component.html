@@ -2,14 +2,25 @@
 <p>This is a Para</p>
 
 <table class="table-width">
-  <tr>
-    <td>
-      <app-admin></app-admin>
-    </td>
-    <td>
-      <app-user></app-user>
-    </td>
-  </tr>
+  <thead>
+    <tr>
+      <th>
+        Pages
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <app-admin></app-admin>
+      </td>
+      <td>
+        <app-user></app-user>
+      </td>
+    </tr>
+  </tbody>
 </table>
+
+<app-data-binding></app-data-binding>
 
 <router-outlet />
